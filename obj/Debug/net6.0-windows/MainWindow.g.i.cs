@@ -117,7 +117,7 @@ namespace WpfApp1_06_01_2023_Data_Greed_list_pokypok {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfApp1_06-01-2023_Data_Greed_list_pokypok;component/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfApp1_06-01-2023_Data_Greed_list_pokypok;V1.0.0.0;component/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
