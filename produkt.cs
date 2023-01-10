@@ -6,12 +6,24 @@ using System.Threading.Tasks;
 
 namespace WpfApp1_06_01_2023_Data_Greed_list_pokypok
 {
-    
-        public class Product
+
+    public class Product
+    {
+        public string? Name { get; set; }
+
+        private bool _IsBuy;
+        private byte _Count;
+
+        public byte Count
         {
-            public string? Name { get; set; }
-            public byte Count { get; set; } = 1;
-            public bool IsBuy { get; set; } = false;
+            get { return _Count; }
+            set { _Count = value; }
         }
-    
-}
+
+        public bool IsBuy
+        {
+            get { return _IsBuy; }
+            set { _IsBuy = value; }
+        }
+    }
+    }

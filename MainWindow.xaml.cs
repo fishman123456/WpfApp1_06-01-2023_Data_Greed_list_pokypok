@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,8 @@ namespace WpfApp1_06_01_2023_Data_Greed_list_pokypok
     /// </summary>
     public partial class MainWindow : Window
     {
+        private BindingList<Product> _toData;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -35,8 +38,14 @@ namespace WpfApp1_06_01_2023_Data_Greed_list_pokypok
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            _toData = new BindingList<Product>()
+            {
+                new Product() { Name = "Овощи" , Count =2, IsBuy = true},
+                new Product() { Name = "Фрукты" , Count =10, IsBuy = true}
 
-        }
+            };
+            productGrid.ItemsSource= _toData;
+            }
 
         private void productGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

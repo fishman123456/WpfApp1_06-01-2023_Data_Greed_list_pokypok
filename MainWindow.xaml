@@ -7,24 +7,12 @@
         mc:Ignorable="d"
        Title="Список покупок" Height="300" Width="500" Closing="Window_Closing" Loaded="Window_Loaded" >
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="0*"/>
-        </Grid.ColumnDefinitions>
-        <DataGrid Name ="productGrid" Margin="2,2,0,2" AutoGenerateColumns="False" SelectionChanged="productGrid_SelectionChanged">
+        <DataGrid Name ="productGrid" Margin="10"  SelectionChanged="productGrid_SelectionChanged" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Path=Name}" Header="Товар" Width="7*" />
-                <DataGridTextColumn Binding="{Binding Path=Count}" Header="Кол-во" Width="*" />
-                <DataGridCheckBoxColumn Binding="{Binding Path=IsBuy}" Header="Куплен" Width="*"/>
+                <DataGridTextColumn  IsReadOnly="False" Binding="{Binding Path=Name}" Header="Товар" Width="7*" />
+                <DataGridTextColumn  IsReadOnly="False" Binding="{Binding Path=Count}" Header="Кол-во" Width="1*" />
+                <DataGridCheckBoxColumn IsReadOnly="False" Binding="{Binding Path=IsBuy}" Header="Куплен" Width="*"/>
             </DataGrid.Columns>
-            <CheckBox Name="one" AllowDrop="True" IsChecked="True"/>
-            <CheckBox Name="two"/>
-            <CheckBox Name="three"/>
-            <CheckBox Name="four"/>
-            <CheckBox Name="five"/>
-            <CheckBox Name="six"/>
-            <CheckBox Name="seven"/>
-
         </DataGrid>
     </Grid>
 </Window>
