@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 
 namespace WpfApp1_06_01_2023_Data_Greed_list_pokypok
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
