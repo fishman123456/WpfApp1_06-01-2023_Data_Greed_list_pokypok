@@ -1,4 +1,6 @@
 ﻿
+using Newtonsoft.Json;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,7 +25,9 @@ namespace WpfApp1_06_01_2023_Data_Greed_list_pokypok
             this.Path = path;
         }
         // метод возвращает BindingList с данными при загрузке, пустой если файла не существует
-        public BindingList<Product> loadFile()
+
+
+        public BindingList<Product> LoadData()
         {
             var fileExist = File.Exists(this.Path);
             if (!fileExist)
@@ -31,17 +35,24 @@ namespace WpfApp1_06_01_2023_Data_Greed_list_pokypok
                 File.CreateText(this.Path).Dispose();
                 return new BindingList<Product>();
             }
-            using (FileStream fs = new FileStream(this.Path, FileMode.Open))
+            using (var reader = File.OpenText(Path))
             {
-                return JsonSerializer.Deserialize<BindingList<Product>>(fs);
+                var fileText = reader.ReadToEnd();
+                return JsonConvert.DeserializeObject<BindingList<Product>>(fileText);
             }
         }
+
+
+
+
         // метод сохраняет данные в json
-        public void saveData(BindingList<Product> products)
+        public void SaveData(object products)
+
         {
-            using (FileStream fs = new FileStream(this.Path, FileMode.Create))
+            using (StreamWriter writer = File.CreateText(Path))
             {
-                JsonSerializer.Serialize<BindingList<Product>>(fs, products);
+                string output = JsonConvert.SerializeObject(products);
+                writer.Write(output);
             }
         }
     }

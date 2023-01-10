@@ -11,7 +11,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn  IsReadOnly="False" Binding="{Binding Path=Name}" Header="Товар" Width="7*" />
                 <DataGridTextColumn  IsReadOnly="False" Binding="{Binding Path=Count}" Header="Кол-во" Width="1*" />
-                <DataGridCheckBoxColumn IsReadOnly="False" Binding="{Binding Path=IsBuy}" Header="Куплен" Width="*"/>
+                <DataGridCheckBoxColumn IsReadOnly="False" Binding="{Binding Path=IsBuy, UpdateSourceTrigger=PropertyChanged}" Header="Куплен" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

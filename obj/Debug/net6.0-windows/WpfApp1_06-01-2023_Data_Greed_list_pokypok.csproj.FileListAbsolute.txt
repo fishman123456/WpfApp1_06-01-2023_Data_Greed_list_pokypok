@@ -19,4 +19,6 @@ C:\Users\Fishman_1\Documents\GitHub\WpfApp1_06-01-2023_Data_Greed_list_pokypok\o
 C:\Users\Fishman_1\Documents\GitHub\WpfApp1_06-01-2023_Data_Greed_list_pokypok\obj\Debug\net6.0-windows\WpfApp1_06-01-2023_Data_Greed_list_pokypok.pdb
 C:\Users\Fishman_1\Documents\GitHub\WpfApp1_06-01-2023_Data_Greed_list_pokypok\obj\Debug\net6.0-windows\WpfApp1_06-01-2023_Data_Greed_list_pokypok.genruntimeconfig.cache
 C:\Users\Fishman_1\Documents\GitHub\WpfApp1_06-01-2023_Data_Greed_list_pokypok\obj\Debug\net6.0-windows\ref\WpfApp1_06-01-2023_Data_Greed_list_pokypok.dll
-C:\Users\Fishman_1\Documents\GitHub\WpfApp1_06-01-2023_Data_Greed_list_pokypok\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Fishman_1\Documents\GitHub\WpfApp1_06-01-2023_Data_Greed_list_pokypok\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Fishman_1\Documents\GitHub\WpfApp1_06-01-2023_Data_Greed_list_pokypok\bin\Debug\net6.0-windows\Newtonsoft.Json.Bson.dll
+C:\Users\Fishman_1\Documents\GitHub\WpfApp1_06-01-2023_Data_Greed_list_pokypok\obj\Debug\net6.0-windows\WpfApp1_06-01-2023_Data_Greed_list_pokypok.csproj.CopyComplete

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "uKT6UCKcmdq2Zp9KhW92iVbmibgwqo+W8jfUQiKvrHuDPNMf9H30ZpJcMzFpHzzmEEnCH4prC37S+U7IIj+pQg==",
+  "dgSpecHash": "WmbHBnnqzdX89DvxWizjqHs8g05nTBzRQJj/rlpqUejA7ft0wHZcgD/pZexgYapSAOW50dFP5RNTQ1li4VVAag==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\WpfApp1_06-01-2023_Data_Greed_list_pokypok\\WpfApp1_06-01-2023_Data_Greed_list_pokypok.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Fishman_1\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\Fishman_1\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
